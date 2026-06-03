@@ -13,7 +13,7 @@ function Workouts() {
   const [workouts, setWorkouts] = useState<Workout[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
- 
+  
   useEffect(() => {
     const url = `${API_BASE_URL}/api/workouts/`;
     fetch(url)
