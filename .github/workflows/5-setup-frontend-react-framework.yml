@@ -58,52 +58,52 @@ jobs:
 
       # START: Check practical exercise
 
-      - name: Check for codespace API endpoint in Activities.jsx
+      - name: Check for codespace API endpoint in Activities.tsx
         id: check-activities
         continue-on-error: true
         uses: skills/action-keyphrase-checker@v2.0.0
         with:
-          text-file: octofit-tracker/frontend/src/components/Activities.jsx
+          text-file: octofit-tracker/frontend/src/components/Activities.tsx
           keyphrase: '-8000.app.github.dev/api/activities'
           minimum-occurrences: 1
           case-sensitive: false
 
-      - name: Check for codespace API endpoint in Leaderboard.jsx
+      - name: Check for codespace API endpoint in Leaderboard.tsx
         id: check-leaderboard
         continue-on-error: true
         uses: skills/action-keyphrase-checker@v2.0.0
         with:
-          text-file: octofit-tracker/frontend/src/components/Leaderboard.jsx
+          text-file: octofit-tracker/frontend/src/components/Leaderboard.tsx
           keyphrase: '-8000.app.github.dev/api/leaderboard'
           minimum-occurrences: 1
           case-sensitive: false
 
-      - name: Check for codespace API endpoint in Teams.jsx
+      - name: Check for codespace API endpoint in Teams.tsx
         id: check-teams
         continue-on-error: true
         uses: skills/action-keyphrase-checker@v2.0.0
         with:
-          text-file: octofit-tracker/frontend/src/components/Teams.jsx
+          text-file: octofit-tracker/frontend/src/components/Teams.tsx
           keyphrase: '-8000.app.github.dev/api/teams'
           minimum-occurrences: 1
           case-sensitive: false
 
-      - name: Check for codespace API endpoint in Users.jsx
+      - name: Check for codespace API endpoint in Users.tsx
         id: check-users
         continue-on-error: true
         uses: skills/action-keyphrase-checker@v2.0.0
         with:
-          text-file: octofit-tracker/frontend/src/components/Users.jsx
+          text-file: octofit-tracker/frontend/src/components/Users.tsx
           keyphrase: '-8000.app.github.dev/api/users'
           minimum-occurrences: 1
           case-sensitive: false
 
-      - name: Check for codespace API endpoint in Workouts.jsx
+      - name: Check for codespace API endpoint in Workouts.tsx
         id: check-workouts
         continue-on-error: true
         uses: skills/action-keyphrase-checker@v2.0.0
         with:
-          text-file: octofit-tracker/frontend/src/components/Workouts.jsx
+          text-file: octofit-tracker/frontend/src/components/Workouts.tsx
           keyphrase: '-8000.app.github.dev/api/workouts'
           minimum-occurrences: 1
           case-sensitive: false
