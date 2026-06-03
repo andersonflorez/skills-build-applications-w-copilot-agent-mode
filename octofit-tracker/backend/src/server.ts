@@ -1,5 +1,5 @@
 import express, { Request, Response } from 'express';
-import mongoose from 'mongoose';
+import { mongoose, MONGO_URL } from './config/database.js';
 import { Activity, Leaderboard, Team, User, Workout } from './models.js';
 
 const app = express();
@@ -9,7 +9,6 @@ const HOST = CODESPACE_NAME ? '0.0.0.0' : 'localhost';
 const API_BASE_URL = CODESPACE_NAME
   ? `https://${CODESPACE_NAME}-8000.app.github.dev`
   : `http://localhost:${PORT}`;
-const MONGO_URL = process.env.MONGO_URL || 'mongodb://127.0.0.1:27017/octofit_db';
 
 app.use(express.json());
 

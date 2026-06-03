@@ -1,8 +1,7 @@
-import mongoose from 'mongoose';
+import { mongoose, MONGO_URL } from '../config/database.js';
 import { Activity, Leaderboard, Team, User, Workout } from '../models.js';
 
 // Seed the octofit_db database with test data
-const MONGO_URL = process.env.MONGO_URL || 'mongodb://127.0.0.1:27017/octofit_db';
 
 async function seed() {
   console.log('Seed the octofit_db database with test data');
