@@ -8,7 +8,7 @@ type Workout = {
   durationMinutes: number;
   difficulty: string;
 };
-
+ 
 function Workouts() {
   const [workouts, setWorkouts] = useState<Workout[]>([]);
   const [loading, setLoading] = useState(true);
